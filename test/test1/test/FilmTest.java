@@ -20,7 +20,10 @@ public class FilmTest {
         
         Film f1 = new Film();
         f1.setTitre("pulp fiction");
+        f1.setSynopsis("a");
         
         System.out.println( f1 );
+        
+        
     }
 }

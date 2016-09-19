@@ -11,18 +11,15 @@ package test1.classes;
  */
 public class Film {
 
-    private String titre;
+    static private String titre;
     private Integer dureeEnMinutes;
     private String synopsis;
     private Integer annee;
 
     @Override
     public String toString() {
-        return "FILM: " + titre + " " + dureeEnMinutes + "min " +
-        synopsis + " " + annee;
+        return "FILM: titre=" + titre + " synopsis=" + synopsis;
     }
-
-     
     
     public String getTitre() {
         return titre;
