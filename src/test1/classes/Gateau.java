@@ -11,11 +11,14 @@ package test1.classes;
  */
 public class Gateau{
     
+    private static int nbObjets = 0;
     private static String forme="étoile";
     private String gout;
     private String couleur;
 
     public Gateau(String gout, String couleur) {
+        
+        nbObjets++;
         this.gout = gout;
         this.couleur = couleur;
     }
@@ -24,12 +27,13 @@ public class Gateau{
     
     public Gateau() {
         
-        this.couleur = "noir";
-        this.gout = "chocolat";
+        this("chocolat", "noir");
     }
 
-    
-    
+    public static int getNbObjets() {
+        return nbObjets;
+    }
+
     public String getCouleur() {
         return couleur;
     }
