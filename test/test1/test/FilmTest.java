@@ -18,11 +18,10 @@ public class FilmTest {
     @Test
     public void test1(){
         
-        Film f1 = new Film();
-        f1.setTitre("pulp fiction");
-        f1.setSynopsis("a");
+        Film f1 = new Film("Pulp Fiction", 120, "blabla", 1995);
+        Film f2 = new Film("Reservoir Dogs", 90, "blabla", 1993);
         
-        System.out.println( f1 );
+        System.out.println( Film.getNbElem() );
         
         
     }

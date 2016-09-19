@@ -11,10 +11,27 @@ package test1.classes;
  */
 public class Film {
 
-    static private String titre;
+    private static long nbElem = 0;
+    private String titre;
     private Integer dureeEnMinutes;
     private String synopsis;
     private Integer annee;
+
+    public Film(String titre, Integer dureeEnMinutes, String synopsis, Integer annee) {
+        this();
+        this.titre = titre;
+        this.dureeEnMinutes = dureeEnMinutes;
+        this.synopsis = synopsis;
+        this.annee = annee;
+    }
+
+    public static long getNbElem() {
+        return nbElem;
+    }
+
+    public Film() {
+        nbElem++;
+    }
 
     @Override
     public String toString() {
